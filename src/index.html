@@ -10,12 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <p class="hero__text">
-                Você foi convidado! faltam 14d 23h 45m 23s para a data da comemoração!
+                Você foi convidado! faltam <span id="contador"></span> para a data da comemoração!
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -39,7 +40,44 @@
         </div>
     </header>
 
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Espaço</h2>
+                <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore veniam unde provident recusandae sequi quo illum? Architecto id, rerum mollitia minima, quisquam veritatis dolore esse inventore, quae aliquid doloribus cumque.</p>
+            </div>
+            <img class="event__image" src="./images/madalosso.jpeg" alt="Espaço">
+        </div>
+    </section>
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Almoço</h2>
+                <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore veniam unde provident recusandae sequi quo illum? Architecto id, rerum mollitia minima, quisquam veritatis dolore esse inventore, quae aliquid doloribus cumque.</p>
+            </div>
+            <img class="event__image" src="./images/almoco.jfif" alt="Almoço">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Jantar</h2>
+                <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore veniam unde provident recusandae sequi quo illum? Architecto id, rerum mollitia minima, quisquam veritatis dolore esse inventore, quae aliquid doloribus cumque.</p>
+            </div>
+            <img class="event__image" src="./images/jantar.jfif" alt="Jantar">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Horários</h2>
+                <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore veniam unde provident recusandae sequi quo illum? Architecto id, rerum mollitia minima, quisquam veritatis dolore esse inventore, quae aliquid doloribus cumque.</p>
+            </div>
+            <img class="event__image" src="./images/horario.jfif" alt="Horarios">
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
